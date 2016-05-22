@@ -1,0 +1,21 @@
+{
+    "name": "react-native-opencv",
+    "version": "0.0.1",
+    "description": "Opencv bindings for React Native (Android & iOS)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Nilesh Suthar <nileshsuthar@live.in>",
+    "license": "MIT",
+    "keywords": "react-native",
+    "peerDependencies": {
+        "react-native": ">=0.14.0"
+    },
+    "dependencies": {},
+    "rnpm": {
+        "ios": {
+            "project": "src/ios/RNOpenCV.xcodeproj"
+        }
+    }
+}
