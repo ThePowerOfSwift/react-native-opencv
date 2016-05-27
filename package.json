@@ -4,7 +4,7 @@
     "description": "Opencv bindings for React Native (Android & iOS)",
     "main": "index.js",
     "scripts": {
-        "postinstall" : "cd src/ios && pod install",
+        "postinstall" : "sh tools/postinstall.sh",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Nilesh Suthar <nileshsuthar@live.in>",
