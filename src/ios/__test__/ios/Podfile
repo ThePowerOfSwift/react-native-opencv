@@ -1,0 +1,8 @@
+target 'RNOpenCV-test' do
+	pod 'React', :path => '../node_modules/react-native', :subspecs => [
+	  'RCTText',
+	  'RCTImage',
+	  'RCTNetwork',
+	  'RCTWebSocket'
+	]
+end
