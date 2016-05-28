@@ -18,7 +18,7 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 xcuserdatad/
-
+src/ios/RNOpenCV.xcodeproj/xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
@@ -36,7 +36,8 @@ xcuserdatad/
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
 # Pods/
-Podfile.lock
+src/ios/Podfile.lock
+src/ios/Pods/
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.

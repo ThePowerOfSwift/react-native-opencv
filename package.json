@@ -4,6 +4,7 @@
     "description": "Opencv bindings for React Native (Android & iOS)",
     "main": "index.js",
     "scripts": {
+        "prepublish": "sh tools/prepublish.sh",
         "postinstall" : "sh tools/postinstall.sh",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
