@@ -10,13 +10,29 @@
 
 @interface ViewController ()
 
+@property (nonatomic, weak) RCTRootView *rootView;
+
 @end
 
 @implementation ViewController
 
+@synthesize rootView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    rootView = [self setupRCTView];
+}
+
+-(RCTRootView *)setupRCTView {
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
+    RCTRootView *rctView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                        moduleName: @"RNOpenCV-Test"
+                                                 initialProperties:nil
+                                                     launchOptions:nil];
+
+    [self.view addSubview:rctView];
+    rootView.frame = self.view.bounds;
+    return rctView;
 }
 
 - (void)didReceiveMemoryWarning {
