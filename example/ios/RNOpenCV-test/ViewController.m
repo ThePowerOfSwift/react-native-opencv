@@ -24,9 +24,9 @@
 }
 
 -(RCTRootView *)setupRCTView {
-    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios"];
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8080/index.ios.bundle?platform=ios&dev=true"];
     RCTRootView *rctView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                        moduleName: @"RNOpenCV-Test"
+                                                        moduleName: @"RNOpenCVTest"
                                                  initialProperties:nil
                                                      launchOptions:nil];
 

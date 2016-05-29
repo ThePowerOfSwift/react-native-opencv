@@ -40,6 +40,8 @@ src/ios/Podfile.lock
 src/ios/Pods/
 src/ios/__test__/ios/Podfile.lock
 src/ios/__test__/ios/Pods/
+example/ios/Podfile.lock
+example/ios/Pods/
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.

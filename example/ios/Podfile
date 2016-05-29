@@ -1,5 +1,9 @@
+#platform :ios, "8.0"
+#use_frameworks!
+
 target 'RNOpenCV-test' do
-	pod 'React', :path => '../node_modules/react-native', :subspecs => [
+	
+	pod 'React', :path => '../../../react-native', :subspecs => [
 	  'RCTText',
 	  'RCTImage',
 	  'RCTNetwork',

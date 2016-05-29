@@ -19,7 +19,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "start": "rnws start --root .",
+    "start": "rnws start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

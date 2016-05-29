@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import {
   AppRegistry,
   StyleSheet,
@@ -6,8 +6,8 @@ import {
   View,
   Image
 } from 'react-native';
-// import RNOpenCV from '..';
-import testImage from 'assets/TestImage.jpg';
+import RNOpenCV from '..';
+import testimage from 'assets/TestImage.jpg';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,11 +28,11 @@ class QCards extends React.Component {
   };
 
   componentDidMount() {
-    // RNOpenCV.makeGrayscale(this.state.image, grayscale => {
-    //   this.setState({
-    //     image: grayscale
-    //   })
-    // });  
+    RNOpenCV.makeGrayscale(this.state.image, grayscale => {
+      this.setState({
+        image: grayscale
+      })
+    });  
   }
 
   render() {
@@ -46,4 +46,4 @@ class QCards extends React.Component {
   }
 }
 
-AppRegistry.registerComponent("RNOpenCV-Test", () => QCards);
+AppRegistry.registerComponent('RNOpenCVTest', () => QCards);
