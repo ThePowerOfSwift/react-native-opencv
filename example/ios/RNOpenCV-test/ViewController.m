@@ -30,8 +30,8 @@
                                                  initialProperties:nil
                                                      launchOptions:nil];
 
-    [self.view addSubview:rctView];
     rootView.frame = self.view.bounds;
+    [self.view addSubview:rctView];
     return rctView;
 }
 

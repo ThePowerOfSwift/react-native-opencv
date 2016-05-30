@@ -29,6 +29,7 @@ class QCards extends React.Component {
 
   componentDidMount() {
     RNOpenCV.makeGrayscale(this.state.image, grayscale => {
+      console.log(grayscale);
       this.setState({
         image: grayscale
       })

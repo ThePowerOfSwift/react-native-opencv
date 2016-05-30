@@ -12,8 +12,8 @@ var NativeRNOpenCV = NativeModules.RNOpenCV;
  */
 
 var RNOpenCV = {
-  test: function() {
-    NativeRNOpenCV.test();
+  makeGrayscale: function(imageBase64, callback) {
+    NativeRNOpenCV.makeGrayscale(imageBase64, function (result) { callback(result) } );
   }
 };
 
