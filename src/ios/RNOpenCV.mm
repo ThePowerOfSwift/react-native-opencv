@@ -29,6 +29,8 @@ RCT_EXPORT_METHOD(makeGrayscale:(NSString *)imageBase64 showResult:(RCTResponseS
 - (cv::Mat)convertToGray:(cv::Mat)mat{
     cv::Mat greyMat;
     cv::cvtColor(mat, greyMat, CV_BGR2GRAY);
+    cv::blur(greyMat, greyMat, cv::Size(5,5));
+    cv::Canny(greyMat, greyMat, 5, 10);
     return greyMat;
 }
 

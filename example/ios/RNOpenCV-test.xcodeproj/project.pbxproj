@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		412692221CFC6B3C00F0ADBC /* libRNOpenCVStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 412692201CFC6B3300F0ADBC /* libRNOpenCVStatic.a */; };
-		412692231CFC6B3C00F0ADBC /* RNOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4126921E1CFC6B3300F0ADBC /* RNOpenCV.framework */; };
+		4161ECF01CFE21FD009373F3 /* RNOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4126921E1CFC6B3300F0ADBC /* RNOpenCV.framework */; };
 		41921AAF1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41921AAE1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a */; };
 		41FAE4E21CFA58030082C1DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FAE4E11CFA58030082C1DF /* main.m */; };
 		41FAE4E51CFA58030082C1DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FAE4E41CFA58030082C1DF /* AppDelegate.m */; };
@@ -26,12 +25,12 @@
 			remoteGlobalIDString = 412691F91CFC67D600F0ADBC;
 			remoteInfo = RNOpenCV;
 		};
-		4126921F1CFC6B3300F0ADBC /* PBXContainerItemProxy */ = {
+		4161ECF11CFE22F3009373F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 412692171CFC6B3300F0ADBC /* RNOpenCV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 412692081CFC69A300F0ADBC;
-			remoteInfo = RNOpenCVStatic;
+			proxyType = 1;
+			remoteGlobalIDString = 412692071CFC69A300F0ADBC;
+			remoteInfo = RNOpenCV;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,8 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				412692221CFC6B3C00F0ADBC /* libRNOpenCVStatic.a in Frameworks */,
-				412692231CFC6B3C00F0ADBC /* RNOpenCV.framework in Frameworks */,
+				4161ECF01CFE21FD009373F3 /* RNOpenCV.framework in Frameworks */,
 				41921AAF1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				4126921E1CFC6B3300F0ADBC /* RNOpenCV.framework */,
-				412692201CFC6B3300F0ADBC /* libRNOpenCVStatic.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +172,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4161ECF21CFE22F3009373F3 /* PBXTargetDependency */,
 			);
 			name = "RNOpenCV-test";
 			productName = "RNOpenCV-test";
@@ -225,13 +223,6 @@
 			fileType = wrapper.framework;
 			path = RNOpenCV.framework;
 			remoteRef = 4126921D1CFC6B3300F0ADBC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		412692201CFC6B3300F0ADBC /* libRNOpenCVStatic.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNOpenCVStatic.a;
-			remoteRef = 4126921F1CFC6B3300F0ADBC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -309,6 +300,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4161ECF21CFE22F3009373F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RNOpenCV;
+			targetProxy = 4161ECF11CFE22F3009373F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41FAE4E91CFA58030082C1DF /* Main.storyboard */ = {

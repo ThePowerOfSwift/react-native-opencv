@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		412692011CFC67EC00F0ADBC /* Pods_RNOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413515961CF9442D00DFB1D7 /* Pods_RNOpenCV.framework */; };
 		412692111CFC69B000F0ADBC /* RNOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* RNOpenCV.mm */; };
 		412692121CFC69C800F0ADBC /* Pods_RNOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413515961CF9442D00DFB1D7 /* Pods_RNOpenCV.framework */; };
 		412692151CFC6A2B00F0ADBC /* RNOpenCV.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BE3DEC1AC21097009241FE /* RNOpenCV.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,9 +38,8 @@
 /* Begin PBXFileReference section */
 		13BE3DEC1AC21097009241FE /* RNOpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenCV.h; sourceTree = SOURCE_ROOT; };
 		13BE3DED1AC21097009241FE /* RNOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RNOpenCV.mm; sourceTree = SOURCE_ROOT; };
-		412691F91CFC67D600F0ADBC /* RNOpenCV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNOpenCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		412691FD1CFC67D600F0ADBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		412692081CFC69A300F0ADBC /* libRNOpenCVStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOpenCVStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		412692081CFC69A300F0ADBC /* libRNOpenCV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOpenCV.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		413515911CF9442D00DFB1D7 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		41F4B7531CF945C3008F00CE /* RNOpenCV.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RNOpenCV.debug.xcconfig; sourceTree = "<group>"; };
 		41F4B7541CF945C3008F00CE /* RNOpenCV.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RNOpenCV.release.xcconfig; sourceTree = "<group>"; };
@@ -51,14 +49,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		412691F51CFC67D600F0ADBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				412692011CFC67EC00F0ADBC /* Pods_RNOpenCV.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		412692051CFC69A300F0ADBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,8 +111,7 @@
 				134814211AA4EA7D00B7C361 /* Products */,
 				B71290D12FF835C97CA1A55E /* Pods */,
 				76C366DCA669C0932A7035C4 /* Frameworks */,
-				412691F91CFC67D600F0ADBC /* RNOpenCV.framework */,
-				412692081CFC69A300F0ADBC /* libRNOpenCVStatic.a */,
+				412692081CFC69A300F0ADBC /* libRNOpenCV.a */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,13 +135,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		412691F61CFC67D600F0ADBC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		412692141CFC6A2700F0ADBC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,27 +146,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		412691F81CFC67D600F0ADBC /* RNOpenCV */ = {
+		412692071CFC69A300F0ADBC /* RNOpenCV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 412691FE1CFC67D600F0ADBC /* Build configuration list for PBXNativeTarget "RNOpenCV" */;
-			buildPhases = (
-				412691F41CFC67D600F0ADBC /* Sources */,
-				412691F51CFC67D600F0ADBC /* Frameworks */,
-				412691F61CFC67D600F0ADBC /* Headers */,
-				412691F71CFC67D600F0ADBC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RNOpenCV;
-			productName = RNOpenCV;
-			productReference = 412691F91CFC67D600F0ADBC /* RNOpenCV.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		412692071CFC69A300F0ADBC /* RNOpenCVStatic */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4126920E1CFC69A300F0ADBC /* Build configuration list for PBXNativeTarget "RNOpenCVStatic" */;
+			buildConfigurationList = 4126920E1CFC69A300F0ADBC /* Build configuration list for PBXNativeTarget "RNOpenCV" */;
 			buildPhases = (
 				412692041CFC69A300F0ADBC /* Sources */,
 				412692051CFC69A300F0ADBC /* Frameworks */,
@@ -195,9 +159,9 @@
 			);
 			dependencies = (
 			);
-			name = RNOpenCVStatic;
+			name = RNOpenCV;
 			productName = RNOpenCVStatic;
-			productReference = 412692081CFC69A300F0ADBC /* libRNOpenCVStatic.a */;
+			productReference = 412692081CFC69A300F0ADBC /* libRNOpenCV.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -209,9 +173,6 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					412691F81CFC67D600F0ADBC = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
 					412692071CFC69A300F0ADBC = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -235,8 +196,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				412691F81CFC67D600F0ADBC /* RNOpenCV */,
-				412692071CFC69A300F0ADBC /* RNOpenCVStatic */,
+				412692071CFC69A300F0ADBC /* RNOpenCV */,
 			);
 		};
 /* End PBXProject section */
@@ -251,24 +211,7 @@
 		};
 /* End PBXReferenceProxy section */
 
-/* Begin PBXResourcesBuildPhase section */
-		412691F71CFC67D600F0ADBC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		412691F41CFC67D600F0ADBC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		412692041CFC69A300F0ADBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,69 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		412691FF1CFC67D600F0ADBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
-					"$(SRCROOT)/../../../react-native/React/**",
-				);
-				INFOPLIST_FILE = RNOpenCV/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dadevelopers.RNOpenCV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		412692001CFC67D600F0ADBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
-					"$(SRCROOT)/../../../react-native/React/**",
-				);
-				INFOPLIST_FILE = RNOpenCV/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dadevelopers.RNOpenCV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		4126920F1CFC69A300F0ADBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,7 +236,7 @@
 					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
 					"$(SRCROOT)/../../../react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -377,7 +257,7 @@
 					"\"${PODS_ROOT}/Headers/Public/OpenCV\"",
 					"$(SRCROOT)/../../../react-native/React/**",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -464,16 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		412691FE1CFC67D600F0ADBC /* Build configuration list for PBXNativeTarget "RNOpenCV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				412691FF1CFC67D600F0ADBC /* Debug */,
-				412692001CFC67D600F0ADBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4126920E1CFC69A300F0ADBC /* Build configuration list for PBXNativeTarget "RNOpenCVStatic" */ = {
+		4126920E1CFC69A300F0ADBC /* Build configuration list for PBXNativeTarget "RNOpenCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4126920F1CFC69A300F0ADBC /* Debug */,
