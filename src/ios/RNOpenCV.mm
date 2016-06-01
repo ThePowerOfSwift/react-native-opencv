@@ -1,6 +1,6 @@
 #import "RNOpenCV.h"
-
 #import <opencv2/opencv.hpp>
+
 
 @implementation RNOpenCV
 
@@ -27,11 +27,11 @@ RCT_EXPORT_METHOD(makeGrayscale:(NSString *)imageBase64 showResult:(RCTResponseS
 }
 
 - (cv::Mat)convertToGray:(cv::Mat)mat{
-    cv::Mat greyMat;
-    cv::cvtColor(mat, greyMat, CV_BGR2GRAY);
-    cv::blur(greyMat, greyMat, cv::Size(5,5));
-    cv::Canny(greyMat, greyMat, 5, 10);
-    return greyMat;
+    Process *process = [[Process alloc] initWithMatrix:mat];
+    [process convertColor:CV_RGB2GRAY];
+    [process medianBlur:5];
+    [process cannyFrom:5 to:10];
+    return [process apply];
 }
 
 // href : http://docs.opencv.org/2.4/doc/tutorials/ios/image_manipulation/image_manipulation.html#opencviosimagemanipulation

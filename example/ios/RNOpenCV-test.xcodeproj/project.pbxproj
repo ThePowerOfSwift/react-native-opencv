@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4161ECF01CFE21FD009373F3 /* RNOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4126921E1CFC6B3300F0ADBC /* RNOpenCV.framework */; };
-		41921AAF1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41921AAE1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a */; };
+		415B6D9E1CFF7BD400872A15 /* RNOpenCV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4126921E1CFC6B3300F0ADBC /* RNOpenCV.framework */; };
+		415B6DA11CFF7DA800872A15 /* libRNOpenCVBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE71C81CFF7783002B2D12 /* libRNOpenCVBridge.a */; };
+		41EE71CA1CFF77A3002B2D12 /* libPods-RNOpenCV-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41921AAE1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a */; };
 		41FAE4E21CFA58030082C1DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FAE4E11CFA58030082C1DF /* main.m */; };
 		41FAE4E51CFA58030082C1DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FAE4E41CFA58030082C1DF /* AppDelegate.m */; };
 		41FAE4E81CFA58030082C1DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FAE4E71CFA58030082C1DF /* ViewController.m */; };
@@ -25,12 +26,12 @@
 			remoteGlobalIDString = 412691F91CFC67D600F0ADBC;
 			remoteInfo = RNOpenCV;
 		};
-		4161ECF11CFE22F3009373F3 /* PBXContainerItemProxy */ = {
+		41EE71C71CFF7783002B2D12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 412692171CFC6B3300F0ADBC /* RNOpenCV.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 412692071CFC69A300F0ADBC;
-			remoteInfo = RNOpenCV;
+			proxyType = 2;
+			remoteGlobalIDString = 412692081CFC69A300F0ADBC;
+			remoteInfo = RNOpenCVBridge;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +40,7 @@
 		41921AAE1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RNOpenCV-test.a"; path = "../../../../Library/Developer/Xcode/DerivedData/RNOpenCV-test-dwcxuzhijbtimgbzlnireesgriga/Build/Products/Debug-iphonesimulator/libPods-RNOpenCV-test.a"; sourceTree = "<group>"; };
 		41921AB01CFBA4BC001BC2E7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
 		41921AB41CFBA4DE001BC2E7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		41EE71C21CFF7745002B2D12 /* Pods_RNOpenCV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_RNOpenCV.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RNOpenCV-test-dwcxuzhijbtimgbzlnireesgriga/Build/Products/Debug-iphonesimulator/Pods_RNOpenCV.framework"; sourceTree = "<group>"; };
 		41FAE4DD1CFA58030082C1DF /* RNOpenCV-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNOpenCV-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FAE4E11CFA58030082C1DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41FAE4E31CFA58030082C1DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,16 +52,18 @@
 		41FAE4EF1CFA58030082C1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41FAE4F11CFA58030082C1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A040B9FEFD95F2D753C3F7 /* Pods-RNOpenCV-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOpenCV-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNOpenCV-test/Pods-RNOpenCV-test.debug.xcconfig"; sourceTree = "<group>"; };
+		B070B017C11A743FE568FD0A /* libPods-RNOpenCV-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNOpenCV-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B216B2868A83F3A09E278A35 /* Pods-RNOpenCV-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOpenCV-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNOpenCV-test/Pods-RNOpenCV-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41FAE4DA1CFA58030082C1DF /* Frameworks */ = {
+		41EE71C01CFF773C002B2D12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4161ECF01CFE21FD009373F3 /* RNOpenCV.framework in Frameworks */,
-				41921AAF1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a in Frameworks */,
+				415B6DA11CFF7DA800872A15 /* libRNOpenCVBridge.a in Frameworks */,
+				415B6D9E1CFF7BD400872A15 /* RNOpenCV.framework in Frameworks */,
+				41EE71CA1CFF77A3002B2D12 /* libPods-RNOpenCV-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,7 @@
 		412692181CFC6B3300F0ADBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				41EE71C81CFF7783002B2D12 /* libRNOpenCVBridge.a */,
 				4126921E1CFC6B3300F0ADBC /* RNOpenCV.framework */,
 			);
 			name = Products;
@@ -128,9 +133,11 @@
 		B48A45A3FD8328D3120F6BE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41EE71C21CFF7745002B2D12 /* Pods_RNOpenCV.framework */,
 				41921AB41CFBA4DE001BC2E7 /* AssetsLibrary.framework */,
 				41921AB01CFBA4BC001BC2E7 /* opencv2.framework */,
 				41921AAE1CFBA104001BC2E7 /* libPods-RNOpenCV-test.a */,
+				B070B017C11A743FE568FD0A /* libPods-RNOpenCV-test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,16 +170,15 @@
 			buildPhases = (
 				0BBE706F8FBA1C1213FDE375 /* 📦 Check Pods Manifest.lock */,
 				41FAE4D91CFA58030082C1DF /* Sources */,
-				41FAE4DA1CFA58030082C1DF /* Frameworks */,
 				41FAE4DB1CFA58030082C1DF /* Resources */,
 				6ACA6D3519D05427D4EFFA11 /* 📦 Embed Pods Frameworks */,
 				805D43B833F3282AB84CC64C /* 📦 Copy Pods Resources */,
 				417527741CFB4D8D002351AC /* Headers */,
+				41EE71C01CFF773C002B2D12 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4161ECF21CFE22F3009373F3 /* PBXTargetDependency */,
 			);
 			name = "RNOpenCV-test";
 			productName = "RNOpenCV-test";
@@ -223,6 +229,13 @@
 			fileType = wrapper.framework;
 			path = RNOpenCV.framework;
 			remoteRef = 4126921D1CFC6B3300F0ADBC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41EE71C81CFF7783002B2D12 /* libRNOpenCVBridge.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNOpenCVBridge.a;
+			remoteRef = 41EE71C71CFF7783002B2D12 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -300,14 +313,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4161ECF21CFE22F3009373F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RNOpenCV;
-			targetProxy = 4161ECF11CFE22F3009373F3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41FAE4E91CFA58030082C1DF /* Main.storyboard */ = {
